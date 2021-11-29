@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<title>Adventure Room</title>
+<h1>{{scene.name}}</h1>
+<p>{{current_view}}</p>
+<p>What do you do?</p>
+<form action="/parse-action" method='get'>
+    <input type='text' name='action'/>
+    <input type='text' name='scene' value={{scene.id}} hidden/>
+    <input type='submit' value='Go!'/>
+</form>
